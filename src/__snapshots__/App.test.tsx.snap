@@ -2,6 +2,17 @@
 
 exports[`App snapshot 1`] = `
 <DocumentFragment>
-  <div />
+  <div>
+    <input
+      type="text"
+      value=""
+    />
+    <button>
+      Add
+    </button>
+    <div>
+      <ul />
+    </div>
+  </div>
 </DocumentFragment>
 `;
