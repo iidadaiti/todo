@@ -3,11 +3,13 @@ import { TodoData } from './Todo'
 
 export interface TodoItemProps extends Omit<ComponentProps<'div'>, 'children'> {
   data: TodoData
+  onRemoveTodo?: (todoData: TodoData) => void
   onChangeTodo?: (before: TodoData, after: TodoData) => void
 }
 
 export const TodoItem: FC<TodoItemProps> = ({
   data,
+  onRemoveTodo,
   onChangeTodo,
   ...props
 }) => {
@@ -23,6 +25,14 @@ export const TodoItem: FC<TodoItemProps> = ({
           }
         />
         <span>{data.text}</span>
+        <button
+          onClick={() => {
+            onRemoveTodo && onRemoveTodo(data)
+          }}
+          disabled={!onRemoveTodo}
+        >
+          remove
+        </button>
       </div>
     </label>
   )
