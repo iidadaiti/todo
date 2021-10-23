@@ -3,24 +3,39 @@
 exports[`App snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="container"
+    class="spectrum spectrum--medium spectrum--light"
   >
     <div
       class="container"
     >
       <h1
-        class="title"
+        class="spectrum-Heading spectrum-Heading--sizeXXL"
       >
         Todo
       </h1>
     </div>
-    <input
-      type="text"
-      value=""
-    />
-    <button>
-      Add
-    </button>
+    <div
+      class="container"
+    >
+      <div
+        class="spectrum-Textfield"
+      >
+        <input
+          class="spectrum-Textfield-input"
+          type="text"
+          value=""
+        />
+      </div>
+      <button
+        class="spectrum-Button spectrum-Button--cta spectrum-Button--sizeM"
+      >
+        <span
+          class="spectrum-Button-label"
+        >
+          Add
+        </span>
+      </button>
+    </div>
     <div>
       <ul />
     </div>

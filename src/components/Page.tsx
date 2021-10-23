@@ -1,10 +1,27 @@
-import React, { ComponentProps, FC } from 'react'
+import '@spectrum-css/page/dist/index-vars.css'
+import React, { ComponentProps, FC, PropsWithChildren } from 'react'
 import { mergeClassNames } from '../utils/classNames'
-import styles from './Page.module.css'
 
-export const Page: FC<ComponentProps<'div'>> = ({ className, ...props }) => (
-  <div
-    className={mergeClassNames(styles.container, className)}
-    {...props}
-  ></div>
-)
+export interface PageProps extends Omit<ComponentProps<'div'>, 'children'> {
+  theme?: 'light'
+  scale?: 'medium' | 'large'
+}
+
+export const Page: FC<PropsWithChildren<PageProps>> = ({
+  theme = 'light',
+  scale = 'medium',
+  className,
+  ...props
+}) => {
+  return (
+    <div
+      className={mergeClassNames(
+        'spectrum',
+        `spectrum--${scale}`,
+        `spectrum--${theme}`,
+        className
+      )}
+      {...props}
+    ></div>
+  )
+}

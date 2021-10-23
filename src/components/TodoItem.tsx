@@ -1,4 +1,5 @@
 import React, { ComponentProps, FC } from 'react'
+import { Button } from './Button'
 import { TodoData } from './Todo'
 
 export interface TodoItemProps extends Omit<ComponentProps<'div'>, 'children'> {
@@ -25,14 +26,14 @@ export const TodoItem: FC<TodoItemProps> = ({
           }
         />
         <span>{data.text}</span>
-        <button
+        <Button
           onClick={() => {
             onRemoveTodo && onRemoveTodo(data)
           }}
           disabled={!onRemoveTodo}
         >
-          remove
-        </button>
+          Remove
+        </Button>
       </div>
     </label>
   )

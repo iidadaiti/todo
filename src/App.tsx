@@ -1,6 +1,8 @@
 import { customAlphabet } from 'nanoid'
 import React, { FC, useState } from 'react'
+import { Button } from './components/Button'
 import { Header } from './components/Header'
+import { InputText } from './components/InputText'
 import { Page } from './components/Page'
 import { Todo, TodoProps } from './components/Todo'
 
@@ -20,34 +22,36 @@ export const App: FC = () => {
     <Page>
       <Header />
 
-      <input
-        type="text"
-        autoFocus={true}
-        value={text}
-        onChange={(e) => setText(e.currentTarget.value)}
-        onKeyPress={(e) => {
-          if (e.key !== 'Enter' || e.currentTarget.value.length < 1) {
-            return
-          }
+      <div>
+        <InputText
+          autoFocus
+          value={text}
+          onChange={(e) => setText(e.currentTarget.value)}
+          onKeyPress={(e) => {
+            if (e.key !== 'Enter' || e.currentTarget.value.length < 1) {
+              return
+            }
 
-          e.preventDefault()
-          addTodo()
+            e.preventDefault()
+            addTodo()
 
-          setText('')
-        }}
-      />
-      <button
-        onClick={() => {
-          if (text.length < 1) {
-            return
-          }
+            setText('')
+          }}
+        />
+        <Button
+          style={{ marginLeft: '1rem' }}
+          onClick={() => {
+            if (text.length < 1) {
+              return
+            }
 
-          addTodo()
-          setText('')
-        }}
-      >
-        Add
-      </button>
+            addTodo()
+            setText('')
+          }}
+        >
+          Add
+        </Button>
+      </div>
 
       <Todo
         todoList={todoList}
