@@ -1,5 +1,6 @@
 import { customAlphabet } from 'nanoid'
 import React, { FC, useState } from 'react'
+import { Header } from './components/Header'
 import { Page } from './components/Page'
 import { Todo, TodoProps } from './components/Todo'
 
@@ -17,6 +18,8 @@ export const App: FC = () => {
 
   return (
     <Page>
+      <Header />
+
       <input
         type="text"
         autoFocus={true}

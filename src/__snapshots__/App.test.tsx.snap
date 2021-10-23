@@ -2,7 +2,18 @@
 
 exports[`App snapshot 1`] = `
 <DocumentFragment>
-  <div>
+  <div
+    class="container"
+  >
+    <div
+      class="container"
+    >
+      <h1
+        class="title"
+      >
+        Todo
+      </h1>
+    </div>
     <input
       type="text"
       value=""
