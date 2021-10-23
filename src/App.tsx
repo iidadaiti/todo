@@ -1,5 +1,6 @@
 import { customAlphabet } from 'nanoid'
 import React, { FC, useState } from 'react'
+import { Page } from './components/Page'
 import { Todo, TodoProps } from './components/Todo'
 
 const nanoid = customAlphabet('1234567890', 8)
@@ -15,7 +16,7 @@ export const App: FC = () => {
   }
 
   return (
-    <div>
+    <Page>
       <input
         type="text"
         autoFocus={true}
@@ -58,6 +59,6 @@ export const App: FC = () => {
           }
         }}
       ></Todo>
-    </div>
+    </Page>
   )
 }
