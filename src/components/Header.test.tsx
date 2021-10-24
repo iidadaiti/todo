@@ -3,6 +3,6 @@ import React from 'react'
 import { Header } from './Header'
 
 test('Header snapshot', () => {
-  const result = render(<Header />)
+  const result = render(<Header></Header>)
   expect(result.asFragment()).toMatchSnapshot()
 })

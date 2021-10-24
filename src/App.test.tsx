@@ -3,6 +3,6 @@ import React from 'react'
 import { App } from './App'
 
 test('App snapshot', () => {
-  const result = render(<App />)
+  const result = render(<App></App>)
   expect(result.asFragment()).toMatchSnapshot()
 })

@@ -3,6 +3,6 @@ import React from 'react'
 import { Button } from './Button'
 
 test('Button snapshot', () => {
-  const result = render(<Button />)
+  const result = render(<Button></Button>)
   expect(result.asFragment()).toMatchSnapshot()
 })

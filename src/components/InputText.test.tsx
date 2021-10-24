@@ -3,6 +3,6 @@ import React from 'react'
 import { InputText } from './InputText'
 
 test('InputText snapshot', () => {
-  const result = render(<InputText />)
+  const result = render(<InputText></InputText>)
   expect(result.asFragment()).toMatchSnapshot()
 })

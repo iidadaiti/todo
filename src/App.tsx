@@ -46,7 +46,7 @@ export const App: FC = () => {
   return (
     <Page className={styles.page}>
       <header>
-        <Header />
+        <Header></Header>
       </header>
 
       <main className={styles.main}>
@@ -61,7 +61,7 @@ export const App: FC = () => {
                 />
                 <div className={styles.todoHeaderButton}>
                   <Button type="submit">
-                    <AddIcon />
+                    <AddIcon></AddIcon>
                     Add
                   </Button>
                 </div>
