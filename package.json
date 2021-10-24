@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@spectrum-css/button": "^4.0.0",
+    "@spectrum-css/icon": "^3.0.4",
     "@spectrum-css/page": "^3.0.3",
     "@spectrum-css/table": "^4.0.0",
     "@spectrum-css/textfield": "^3.0.3",

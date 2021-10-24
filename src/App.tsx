@@ -3,6 +3,7 @@ import React, { FC, FormEvent, useState } from 'react'
 import styles from './App.module.css'
 import { Button } from './components/Button'
 import { Header } from './components/Header'
+import { AddIcon } from './components/Icon'
 import { InputText } from './components/InputText'
 import { Page } from './components/Page'
 import { Todo, TodoData, TodoProps } from './components/Todo'
@@ -59,7 +60,10 @@ export const App: FC = () => {
                   onChange={(e) => setText(e.currentTarget.value)}
                 />
                 <div className={styles.todoHeaderButton}>
-                  <Button type="submit">Add</Button>
+                  <Button type="submit">
+                    <AddIcon />
+                    Add
+                  </Button>
                 </div>
               </form>
             </div>

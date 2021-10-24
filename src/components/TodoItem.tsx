@@ -1,5 +1,6 @@
 import React, { ComponentProps, FC } from 'react'
 import { Button } from './Button'
+import { DeleteIcon } from './Icon'
 import { TableCell, TableRow } from './Table'
 import { TodoData } from './Todo'
 import styles from './TodoItem.module.css'
@@ -42,6 +43,7 @@ export const TodoItem: FC<TodoItemProps> = ({
       </TableCell>
       <TableCell valign="middle">
         <Button onClick={handlerClick} disabled={!onRemoveTodo}>
+          <DeleteIcon></DeleteIcon>
           Remove
         </Button>
       </TableCell>
