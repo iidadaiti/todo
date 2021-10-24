@@ -1,4 +1,4 @@
-import '@spectrum-css/page/dist/index-vars.css'
+import '@spectrum-css/page'
 import React, { ComponentProps, FC, PropsWithChildren } from 'react'
 import { mergeClassNames } from '../utils/classNames'
 

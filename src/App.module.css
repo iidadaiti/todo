@@ -1,0 +1,44 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+  flex-grow: 1;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 2rem 0;
+}
+
+.todoHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--spectrum-global-color-gray-200);
+}
+
+.todoHeaderButton {
+  display: inline-flex;
+  margin-left: 1rem;
+}
+
+.todoBody {
+  overflow: auto;
+  height: 0;
+  flex-grow: 1;
+}

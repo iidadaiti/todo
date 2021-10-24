@@ -1,4 +1,5 @@
 import React, { ComponentProps, FC } from 'react'
+import { Table, TableBody } from './Table'
 import { TodoItem, TodoItemProps } from './TodoItem'
 
 export interface TodoData {
@@ -9,7 +10,7 @@ export interface TodoData {
 }
 
 export interface TodoProps
-  extends Omit<ComponentProps<'div'>, 'children'>,
+  extends Omit<ComponentProps<'table'>, 'children'>,
     Pick<TodoItemProps, 'onRemoveTodo' | 'onChangeTodo'> {
   todoList: TodoData[]
 }
@@ -20,17 +21,16 @@ export const Todo: FC<TodoProps> = ({
   onChangeTodo,
   ...props
 }) => (
-  <div {...props}>
-    <ul>
+  <Table {...props}>
+    <TableBody>
       {todoList.map((data) => (
-        <li key={data.key}>
-          <TodoItem
-            data={data}
-            onChangeTodo={onChangeTodo}
-            onRemoveTodo={onRemoveTodo}
-          ></TodoItem>
-        </li>
+        <TodoItem
+          key={data.key}
+          data={data}
+          onChangeTodo={onChangeTodo}
+          onRemoveTodo={onRemoveTodo}
+        ></TodoItem>
       ))}
-    </ul>
-  </div>
+    </TableBody>
+  </Table>
 )

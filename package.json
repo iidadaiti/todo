@@ -5,6 +5,7 @@
   "dependencies": {
     "@spectrum-css/button": "^4.0.0",
     "@spectrum-css/page": "^3.0.3",
+    "@spectrum-css/table": "^4.0.0",
     "@spectrum-css/textfield": "^3.0.3",
     "@spectrum-css/typography": "^4.0.0",
     "@spectrum-css/vars": "^4.0.1",

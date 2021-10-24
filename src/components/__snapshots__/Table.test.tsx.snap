@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table snapshot 1`] = `
+<DocumentFragment>
+  <table
+    class="spectrum-Table spectrum-Table--sizeM"
+  >
+    <thead
+      class="spectrum-Table-head"
+    >
+      <tr
+        class="spectrum-Table-row"
+      >
+        <th
+          class="spectrum-Table-headCell"
+        />
+      </tr>
+    </thead>
+    <tbody
+      class="spectrum-Table-body"
+    >
+      <tr
+        class="spectrum-Table-row"
+      >
+        <td
+          class="spectrum-Table-cell"
+        />
+      </tr>
+    </tbody>
+  </table>
+</DocumentFragment>
+`;

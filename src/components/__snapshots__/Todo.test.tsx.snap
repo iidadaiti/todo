@@ -2,8 +2,45 @@
 
 exports[`Todo snapshot 1`] = `
 <DocumentFragment>
-  <div>
-    <ul />
-  </div>
+  <table
+    class="spectrum-Table spectrum-Table--sizeM"
+  >
+    <tbody
+      class="spectrum-Table-body"
+    >
+      <tr
+        class="spectrum-Table-row"
+      >
+        <td
+          class="spectrum-Table-cell"
+          valign="middle"
+        >
+          <input
+            id="todo-item-01"
+            type="checkbox"
+          />
+        </td>
+        <td
+          class="spectrum-Table-cell textCell"
+          valign="middle"
+        />
+        <td
+          class="spectrum-Table-cell"
+          valign="middle"
+        >
+          <button
+            class="spectrum-Button spectrum-Button--cta spectrum-Button--sizeM"
+            disabled=""
+          >
+            <span
+              class="spectrum-Button-label"
+            >
+              Remove
+            </span>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </DocumentFragment>
 `;

@@ -3,42 +3,71 @@
 exports[`App snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="spectrum spectrum--medium spectrum--light"
+    class="spectrum spectrum--medium spectrum--light page"
   >
-    <div
-      class="container"
-    >
-      <h1
-        class="spectrum-Heading spectrum-Heading--sizeXXL"
-      >
-        Todo
-      </h1>
-    </div>
-    <div
-      class="container"
-    >
+    <header>
       <div
-        class="spectrum-Textfield"
+        class="container"
       >
-        <input
-          class="spectrum-Textfield-input"
-          type="text"
-          value=""
-        />
-      </div>
-      <button
-        class="spectrum-Button spectrum-Button--cta spectrum-Button--sizeM"
-      >
-        <span
-          class="spectrum-Button-label"
+        <h1
+          class="spectrum-Heading spectrum-Heading--sizeXXL"
         >
-          Add
-        </span>
-      </button>
-    </div>
-    <div>
-      <ul />
-    </div>
+          Todo
+        </h1>
+      </div>
+    </header>
+    <main
+      class="main"
+    >
+      <section
+        class="section"
+      >
+        <div
+          class="container"
+        >
+          <div
+            class="todoHeader"
+          >
+            <form>
+              <div
+                class="spectrum-Textfield"
+              >
+                <input
+                  class="spectrum-Textfield-input"
+                  type="text"
+                  value=""
+                />
+              </div>
+              <div
+                class="todoHeaderButton"
+              >
+                <button
+                  class="spectrum-Button spectrum-Button--cta spectrum-Button--sizeM"
+                  type="submit"
+                >
+                  <span
+                    class="spectrum-Button-label"
+                  >
+                    Add
+                  </span>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div
+            class="todoBody"
+          >
+            <table
+              class="spectrum-Table spectrum-Table--sizeM"
+            >
+              <tbody
+                class="spectrum-Table-body"
+              />
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
   </div>
 </DocumentFragment>
 `;
