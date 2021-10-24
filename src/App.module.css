@@ -32,9 +32,9 @@
   background-color: var(--spectrum-global-color-gray-200);
 }
 
-.todoHeaderButton {
-  display: inline-flex;
-  margin-left: 1rem;
+.form {
+  display: flex;
+  gap: 1rem;
 }
 
 .todoBody {

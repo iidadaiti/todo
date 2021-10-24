@@ -53,13 +53,13 @@ export const App: FC = () => {
         <section className={styles.section}>
           <div className={styles.container}>
             <div className={styles.todoHeader}>
-              <form onSubmit={handlerSubmit}>
+              <form className={styles.form} onSubmit={handlerSubmit}>
                 <InputText
                   autoFocus
                   value={text}
                   onChange={(e) => setText(e.currentTarget.value)}
                 />
-                <div className={styles.todoHeaderButton}>
+                <div>
                   <Button type="submit">
                     <AddIcon></AddIcon>
                     Add
